@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "8bd86d6db5ede09ca893bc6af763c65e"
+name = "premium-consumer-app"
+handle = "premium-consumer-app-14"
+application_url = "34.202.233.168:3000"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = false
+dev_store_url = "returnleaf.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://came-factor-journey-commonwealth.trycloudflare.com/auth/callback",
+  "https://came-factor-journey-commonwealth.trycloudflare.com/auth/shopify/callback",
+  "https://came-factor-journey-commonwealth.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
